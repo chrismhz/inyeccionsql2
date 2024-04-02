@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inyeccion SQL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #87CEEB; /* Fondo azul cielo */
+        }
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 50%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #007bff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        .input-label {
+            text-align: center; /* Centrar el texto */
+            margin-bottom: 10px; /* Espacio inferior */
+        }
+        form {
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 15px;
+            margin-bottom: 20px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            box-sizing: border-box;
+        }
+        input[type="password"] {
+            padding: 15px;
+            margin-bottom: 20px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+    <div class="container">
+        <h2>Búsqueda de Usuarios</h2>
+        <br>
+        <!-- <h3>Introduce el nombre del usuario</h3> -->
+        <div class="input-label">Introduzca el nombre</div>
+        <form action="formulario.php" method="post">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <br>
+        <!-- <h3>Introduce la contraseña del usuario</h3> -->
+        <div class="input-label">Introduzca la contraseña</div>
+            <input type="password" name="clave" placeholder="Contraseña" required>
+            <br>
+            <input type="submit" value="Buscar">
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    *Esta práctica se hizo con fines éticos - marzo 2024
+    <br>
+    <br>
+    Si ya no quieres recibir mas correos, <a href="baja.php?correo=pepito18m%40gmail.com">pulse aquí</a> para darse de baja
+    <br>
+    <br>
+    <br>
+</div>
+
+</body>
+</html>
